@@ -1,0 +1,155 @@
+\documentclass[12pt]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{vietnam}
+\usepackage[left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{etoolbox}
+\usepackage{float}
+\usepackage{amsmath}
+
+\usepackage[nottoc,notlof,notlot]{tocbibind} 
+\renewcommand\bibname{References}
+
+% \setcounter{tocdepth}{4}
+
+% Link color setup
+\hypersetup{
+	colorlinks = true,
+	linkcolor = black,
+	citecolor = blue
+}
+
+% Change format of page
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{Phân tích và thiết kế hệ thống thông tin}
+\fancyfoot[L]{Hệ thống quản lý thư viện}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+% format
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\large\sffamily\bfseries}{\thesubsubsection}{1em}{}
+
+% tab command
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+\textsc{\LARGE Trường đại học bách khoa hà nội}\\[1cm] % Name of your university/college
+% \textsc{\LARGE INSTITUTE OF TECHNOLOGY  }\\[0.3cm]
+% \textsc{\Large JALANDHAR-144011, PUNJAB(INDIA) }\\[0.3cm]
+\textsc{\large\bfseries Báo cáo môn học:} \\[0.2cm]
+\textsc{\LARGE\bfseries Phân tích và thiết kế hệ thống thông tin}\\[1cm] % Major heading such as course name
+ % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+\HRule \\[0.4cm]
+{\Huge \bfseries HỆ THỐNG QUẢN LÝ THƯ VIỆN}\\[0.3cm] % Title of your document
+\HRule \\[1.5cm]
+
+ 
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Sinh viên thực hiện:}\\
+Tạ Quang Tùng \\
+Nguyễn Quang Quý \\
+Tạ Bảo Thắng \\
+Lâm Xuân Thư 
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Giáo viên hướng dẫn:} \\
+TS. ABCDX
+\end{flushright}
+\end{minipage}\\[2cm]
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+{\large Hà Nội, \today}\\[1cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+\includegraphics[width=4cm]{hust.jpg}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\pagenumbering{gobble}
+\tableofcontents 
+\newpage
+
+\pagenumbering{arabic}
+\newpage
+\setcounter{page}{1}
+
+\section{Giới thiệu đề tài}
+
+\section{Yêu cầu hệ thống}
+
+\section{Kế hoạch làm việc}
+
+\section{Phân tích tính khả thi}
+
+\section{Phân tích yêu cầu}
+
+\section{Mô hình hóa chức năng}
+\subsection{Biểu đồ Activity}
+\subsection{Đặc tả Use-Case}
+\subsection{Biểu đồ Use-Case}
+
+\section{Mô hình hóa cấu trúc}
+\subsection{CRC}
+\subsection{Biểu đồ lớp}
+\subsection{Biểu đồ object}
+
+\section{Mô hình hóa hành vi}
+\subsection{Biểu đồ trình tự}
+\subsection{Biểu đồ communication}
+
+\section{Mô hình thiết kế}
+\subsection{Cơ sở dữ liệu}
+\subsection{Thiết kế lớp cụ thể}
+
+\section{Kết luận}
+
+
+\end{document}
