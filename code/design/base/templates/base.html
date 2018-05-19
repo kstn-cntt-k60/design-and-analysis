@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'base/style.css' %}" type="text/css">
+    <script src="{% static 'jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{% static 'popper-1.14.3.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+    {% block base_head %}
+    {% endblock %}
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Thư viện</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item {{active_status.homepage}}">
+            <a class="nav-link" href="/">Trang chủ</a>
+        </li>
+        <li class="nav-item {{active_status.search}}">
+            <a class="nav-link" href="#">Tìm kiếm</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" id="search-bar">
+        <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+        </form>
+
+        <div class="dropdown" id="account-dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown">Tài khoản</button>
+        <ul class="dropdown-menu dropdown-menu-right" id="account-dropdown-menu">
+            <li>{{name}}</li>
+            {% for privilege in privileges %}
+            <li>{{privilege}}</li>
+            {% endfor %}
+            <li>MSSV: 20154280</li>
+            <li>Language: {{lang}}</li>
+            <div class="dropdown-divider"></div>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    {% block base_body %}
+    {% endblock %}
+</body>
+
+</html>
