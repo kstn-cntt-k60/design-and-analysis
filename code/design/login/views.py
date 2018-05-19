@@ -1,16 +1,28 @@
 from django.shortcuts import render
-
-
-class Tung:
-    name = "quang tung"
-    age = "21"
+from django.db import connection
 
 
 def index(request):
-    numbers = [1, 2, 3, 4, 5]
-    name = "ta quang tung"
-    tung = Tung()
+    lang = "english"
+    if 'lang' in request.COOKIES:
+        lang = request.COOKIES['lang']
 
-    args = {"name": name, "numbers": numbers, "tung": tung}
+    if 'name' not in request.session:
+        request.session['name'] = "Tạ Quang Tùng"
+    name = request.session['name']
 
-    return render(request, 'login/login.html', args)
+    cursor = connection.cursor()
+    cursor.execute('SELECT name FROM Privilege')
+
+    privileges = []
+    for row in cursor:
+        privileges.append(row[0])
+
+    args = {
+        'lang': lang,
+        'name': name,
+        'privileges': privileges,
+    }
+    response = render(request, 'login/login.html', args)
+    response.set_cookie('lang', lang)
+    return response

@@ -59,8 +59,12 @@
     <div class="dropdown" id="account-dropdown">
     <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown">Tài khoản</button>
     <ul class="dropdown-menu dropdown-menu-right" id="account-dropdown-menu">
-        <li>Tạ Quang Tùng</li>
+        <li>{{name}}</li>
+        {% for privilege in privileges %}
+        <li>{{privilege}}</li>
+        {% endfor %}
         <li>MSSV: 20154280</li>
+        <li>Language: {{lang}}</li>
         <div class="dropdown-divider"></div>
         <li><a href="#">JavaScript</a></li>
     </ul>
