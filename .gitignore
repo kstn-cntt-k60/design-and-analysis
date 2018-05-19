@@ -14,3 +14,6 @@ code/pip-selfcheck.json
 *.log
 *.pyc
 __pycache__
+
+.env
+db.sqlite3
