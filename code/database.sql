@@ -27,7 +27,7 @@ create table Book (
 
 create table Privilege (
 	privilegeID int primary key auto_increment,
-    name varchar(64)
+    name varchar(128)
 );
 
 create table `Account` (
@@ -52,4 +52,6 @@ create table Borrow (
     foreign key (billID) references Bill(billID)
 );
 
-insert into Privilege (`name`) values ("sinh viên");
+insert into Privilege (`name`) values ('sinh viên');
+insert into Privilege (`name`) values ('giáo vụ');
+insert into Privilege (`name`) values ('thủ kho');
