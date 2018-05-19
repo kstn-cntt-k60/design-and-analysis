@@ -1,8 +1,16 @@
+# for latex
 *.aux
 *.log  
 *.out  
 *.toc
+
+# for virtualenv
 code/bin
 code/include
 code/lib
 code/pip-selfcheck.json
+
+# for django
+*.log
+*.pyc
+__pycache__
