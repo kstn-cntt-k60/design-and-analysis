@@ -2,3 +2,7 @@
 *.log  
 *.out  
 *.toc
+code/bin
+code/include
+code/lib
+code/pip-selfcheck.json
