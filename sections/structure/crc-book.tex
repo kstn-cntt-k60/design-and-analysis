@@ -1,0 +1,41 @@
+\documentclass[../structure.tex]{subfiles}
+
+\begin{document}
+
+{\bfseries\Large Book} \\
+
+\begin{tabular}{| m{8cm} | m{3cm} | m{5.5cm} |}
+\hline
+\multicolumn{3}{|c|}{\textbf{Front}} \\
+\hline
+\textbf{Tên lớp}: Book & \textbf{ID}: 1 & \textbf{Loại}: Cụ thể \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Mô tả}: Chứa thông tin từng cuốn sách} & \textbf{Ca sử dụng được liên kết}: \\
+\hline
+\multicolumn{1}{|c}{\textbf{Nhiệm vụ}} & 
+\multicolumn{2}{|c|}{\textbf{Cộng tác}} \\
+\hline
+\tabitem Lấy thông tin tiêu đề sách & \multicolumn{2}{l|}{\tabitem BookTitle} \\
+\tabitem Lấy thông tin về nhóm ngành & \multicolumn{2}{l|}{\tabitem Topic} \\
+\tabitem Lấy ID & \multicolumn{2}{l|}{} \\
+\tabitem Lấy trạng thái của sách: được phép mượn hoặc không được mượn (chỉ đọc) & \multicolumn{2}{l|}{} \\
+\hline
+\end{tabular} \\[1cm]
+
+\begin{tabular}{| m{8.5cm} | m{8.5cm} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Back}} \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Thuộc tính:}} \\
+\hline
+\multicolumn{2}{|l|}{1. bookID} \\
+\multicolumn{2}{|l|}{2. name} \\
+\hline
+\textbf{Quan hệ}: & \\
+\tabitem Kế thừa (a-kind-of): & \\
+\tabitem Kết tập (has-parts): BookTitle & \\
+\tabitem Liên kết: Topic & \\
+\hline
+\end{tabular}\\[1cm]
+
+\end{document}

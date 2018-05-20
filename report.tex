@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage[utf8]{vietnam}
 \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{subfiles}
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 \usepackage{etoolbox}
@@ -9,6 +10,8 @@
 \usepackage{amsmath}
 \usepackage{array}
 \usepackage{multirow}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
 \usepackage[nottoc,notlof,notlot]{tocbibind} 
 \renewcommand\bibname{References}
@@ -826,7 +829,12 @@ Tác nhân hệ thống được chia thành 2 nhóm, với nhu cầu sử dụn
 \end{figure}
 
 \section{Mô hình hóa cấu trúc}
+
 \subsection{CRC}
+\renewcommand{\arraystretch}{1.5}
+
+\subfile{sections/structure.tex}
+
 \subsection{Biểu đồ lớp}
 \subsection{Biểu đồ object}
 

@@ -1,0 +1,142 @@
+\documentclass[../report.tex]{subfiles}
+
+\begin{document}
+
+\subfile{sections/structure/crc-book.tex}
+
+{\bfseries\Large BookTitle} \\[0.3cm]
+\begin{tabular}{| m{8cm} | m{3cm} | m{5.5cm} |}
+\hline
+\multicolumn{3}{|c|}{\textbf{Front}} \\
+\hline
+\textbf{Tên lớp}: BookTitle & \textbf{ID}: 2 & \textbf{Loại}: Cụ thể \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Mô tả}: Chứa thông tin về tên sách và nhóm ngành} & \textbf{Ca sử dụng được liên kết}: \\
+\hline
+\multicolumn{1}{|c}{\textbf{Nhiệm vụ}} & 
+\multicolumn{2}{|c|}{\textbf{Cộng tác}} \\
+\hline
+\tabitem Lấy thông tin tên sách, NXB, tác giả, năm xuất bản, giá sách & \multicolumn{2}{l|}{\tabitem Topic} \\
+\tabitem Lấy thông tin về nhóm ngành & \multicolumn{2}{l|}{\tabitem Book} \\
+\tabitem Lấy ID & \multicolumn{2}{l|}{} \\
+\hline
+\end{tabular} \\[1cm]
+\begin{tabular}{| m{8.5cm} | m{8.5cm} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Back}} \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Thuộc tính:}} \\
+\hline
+\multicolumn{2}{|l|}{1. ID} \\
+\multicolumn{2}{|l|}{2. name} \\
+\multicolumn{2}{|l|}{3. publisher} \\
+\multicolumn{2}{|l|}{4. publishYear} \\
+\multicolumn{2}{|l|}{5. author} \\
+\multicolumn{2}{|l|}{6. price} \\
+\hline
+\textbf{Quan hệ}: & \\
+\tabitem Kế thừa (a-kind-of): & \\
+\tabitem Kết tập (has-parts): Topic & \\
+\tabitem Liên kết: & \\
+\hline
+\end{tabular}\\[1cm]
+
+{\bfseries\Large Topic} \\[0.3cm]
+\begin{tabular}{| m{8cm} | m{3cm} | m{5.5cm} |}
+\hline
+\multicolumn{3}{|c|}{\textbf{Front}} \\
+\hline
+\textbf{Tên lớp}: Topic & \textbf{ID}: 3 & \textbf{Loại}: Cụ thể \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Mô tả}: Chứa thông tin về nhóm ngành} & \textbf{Ca sử dụng được liên kết}: \\
+\hline
+\multicolumn{1}{|c}{\textbf{Nhiệm vụ}} & 
+\multicolumn{2}{|c|}{\textbf{Cộng tác}} \\
+\hline
+\tabitem Lấy tên nhóm ngành & \multicolumn{2}{l|}{} \\
+\tabitem Lấy ID & \multicolumn{2}{l|}{} \\
+\hline
+\end{tabular} \\[1cm]
+\begin{tabular}{| m{8.5cm} | m{8.5cm} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Back}} \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Thuộc tính:}} \\
+\hline
+\multicolumn{2}{|l|}{1. topicID} \\
+\multicolumn{2}{|l|}{2. name} \\
+\hline
+\textbf{Quan hệ}: & \\
+\tabitem Kế thừa (a-kind-of): & \\
+\tabitem Kết tập (has-parts): & \\
+\tabitem Liên kết: & \\
+\hline
+\end{tabular}\\[1cm]
+
+{\bfseries\Large Account} \\[0.3cm]
+\begin{tabular}{| m{8cm} | m{3cm} | m{5.5cm} |}
+\hline
+\multicolumn{3}{|c|}{\textbf{Front}} \\
+\hline
+\textbf{Tên lớp}: Account & \textbf{ID}: 4 & \textbf{Loại}: Cụ thể \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Mô tả}: Chứa thông tin tài khoản người dùng} & \textbf{Ca sử dụng được liên kết}: \\
+\hline
+\multicolumn{1}{|c}{\textbf{Nhiệm vụ}} & 
+\multicolumn{2}{|c|}{\textbf{Cộng tác}} \\
+\hline
+\tabitem Lấy tên người dùng & \multicolumn{2}{l|}{} \\
+\tabitem Lấy ID & \multicolumn{2}{l|}{} \\
+\hline
+\end{tabular} \\[1cm]
+\begin{tabular}{| m{8.5cm} | m{8.5cm} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Back}} \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Thuộc tính:}} \\
+\hline
+\multicolumn{2}{|l|}{1. accountID} \\
+\multicolumn{2}{|l|}{2. name} \\
+\multicolumn{2}{|l|}{3. password} \\
+\hline
+\textbf{Quan hệ}: & \\
+\tabitem Kế thừa (a-kind-of): & \\
+\tabitem Kết tập (has-parts): & \\
+\tabitem Liên kết: & \\
+\hline
+\end{tabular}\\[1cm]
+
+{\bfseries\Large Account} \\[0.3cm]
+\begin{tabular}{| m{8cm} | m{3cm} | m{5.5cm} |}
+\hline
+\multicolumn{3}{|c|}{\textbf{Front}} \\
+\hline
+\textbf{Tên lớp}: Account & \textbf{ID}: 4 & \textbf{Loại}: Cụ thể \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Mô tả}: Chứa thông tin tài khoản người dùng} & \textbf{Ca sử dụng được liên kết}: \\
+\hline
+\multicolumn{1}{|c}{\textbf{Nhiệm vụ}} & 
+\multicolumn{2}{|c|}{\textbf{Cộng tác}} \\
+\hline
+\tabitem Lấy tên người dùng & \multicolumn{2}{l|}{} \\
+\tabitem Lấy ID & \multicolumn{2}{l|}{} \\
+\hline
+\end{tabular} \\[1cm]
+\begin{tabular}{| m{8.5cm} | m{8.5cm} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Back}} \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Thuộc tính:}} \\
+\hline
+\multicolumn{2}{|l|}{1. accountID} \\
+\multicolumn{2}{|l|}{2. name} \\
+\multicolumn{2}{|l|}{3. password} \\
+\hline
+\textbf{Quan hệ}: & \\
+\tabitem Kế thừa (a-kind-of): & \\
+\tabitem Kết tập (has-parts): & \\
+\tabitem Liên kết: & \\
+\hline
+\end{tabular}\\[1cm]
+
+\end{document}
