@@ -1,0 +1,48 @@
+\documentclass[../report.tex]{subfiles}
+
+\begin{document}
+
+\subsection{Yêu cầu phi tính năng}
+\begin{itemize}
+    \item Yêu cầu hoạt động của hệ thống
+        \begin{itemize}
+            \item Hệ thống hiển thị những thông tin về sách có trong cơ sở 
+                dữ liệu (tên sách, tác giả, nhà xuất bản, \dots).
+            \item Hệ thống sẽ lưu lại những giao dịch mỗi khi bạn đọc thực hiện 
+                việc mượn sách và xóa đi các giao dịch đã được thanh toán. 
+        \end{itemize}
+    \item Yêu cầu hiệu năng và bảo mật. 
+        \begin{itemize}
+            \item Hệ thống vẫn hoạt động ổn định và phản hồi nhanh khi có một lượng lớn truy cập ở cùng một thời điểm. 
+            \item Cần sao lưu CSDL theo chu kì để tránh trường hợp bị mất dữ liệu khi xảy ra sự cố. 
+        \end{itemize}
+\end{itemize}
+\subsection{Yêu cầu tính năng}
+\begin{itemize}
+    \item Tra cứu  \\
+        Hệ thống quản lý thư viện cần có mộtCSDL để có thể lưu trữ các thông tin về tài liệu, 
+        hồ sơ cá nhân của bạn đọc bao gồm: thông tin tài khoản và thông tin giao dịch. 
+        Khi đó người dùng (bao gồm tất cả những người đang sử dụng hệ thống) có thể tìm kiếm tài liệu thông qua:
+        \begin{itemize}
+            \item Tên tài liệu. 
+            \item Danh mục. 
+            \item Tác giả. 
+        \end{itemize}
+        Đối với bạn đọc là thành viên của hệ thống. họ có thể chỉnh sửa thông tin 
+        về tài khoản và tra cứu những giao dịch hiện chưa hoàn tất thanh toán.
+
+    \item Cập nhật tài liệu
+        \begin{itemize}
+            \item Khi có tài liệu mới được thêm vào kho tài liệu của thư viện, quản lý sẽ thêm thông tin của sách vào trong CSDL.
+            \item Khi bạn đọc mượn tài liệu, nhưng sau một thời gian vì một số lý do nào đó cuốn sách bị mất. 
+                Lúc đó bạn đọc sẽ thông báo mất sách cho hệ thống, hệ thống xác nhận lại thông tin 
+                và xóa đi thông tin của tài liệu trong CSDL và yêu cầu bạn đọc bồi thường.
+        \end{itemize}
+
+    \item Xử lý giao dịch \\
+        Mỗi khi bạn đọc mượn tài liệu từ thư viện, hệ thống sẽ yêu cầu kê khai 
+        thông tin bạn đọc và thông tin tài liệu mượn vào phiếu hóa đơn giao dịch. 
+        Phiếu này sau đó được lưu lại trong CSDL và được xóa đi khi tài khoản của bạn đọc bị xóa.
+\end{itemize}
+
+\end{document}
