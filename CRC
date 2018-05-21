@@ -1,0 +1,8 @@
+Tìm đa thức sinh dựa vào định lý :
+Đa thức sinh là khai triển đa thức module thành các thành phần, trong đó có thành phần nào đó có bậc n - k. Tuy nhiên việc khai triển đa thức x^n-1 là việc không hề đơn giản. Do vậy việc tìm ra đa thức sinh là nhiệm vụ của các nhà toán học.
+
+Mã chập: 
+Nguyên tắc: Sử dụng thanh ghi dịch để lưu trữ các kí hiệu đầu vào 
+Sử dụng các mạch logic để tính toán các kí hiệu đầu ra
+Sử dụng bộ dồn kênh để xếp các kí hiệu đầu ra vào một chuỗi tuần tự L
+Biểu diễn mã chập dựa trên hàm logic đầu ra. 

@@ -1,0 +1,84 @@
+PlugInstall
+Git Status
+Git log
+GAdd .
+Git status
+Git add .
+Git commit -m "Change ... "
+Gstatus
+help usr_45
+0tab
+0tabnew
+tabn
+tabnextrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
++tabnext
+-tabnext
+tabnext - 
+tabnext +1
+tabnext 
+tabnext +
+tabp
+numbe
+number
+help nvim-from-vim
+help dev
+help
+help usr_09.txt
+language
+tab
+w foo.cpp
+w main.cpp
+'<,'> hspace{1cm}
+'<,'><
+e
+.
+,
+<>
+hsplit
+<
+'<,'>:<
+'<,'>>
+>
+30
+100
+j
+2
+:
+help yclm
+tab reference.bib
+tabe 
+w reference.bi
+w reference.bib
+tab 1
+tabe 1
+gt
+248
+20
+help tab
+tab 2
+tabe 2
+tabe header.h
+tabe header.cpp
+w wokingWithFile.cc
+qq
+w workingWithFile.cc q
+w workingWithFile.cc
+16
+vsplit
+tabe test.cc
+ew
+e test.cpp
+e .ycm_extra_conf.py
+tabe
+qa
+tabe main.cpp
+e include/test.hpp
+e main.cpp
+q!
+ư
+q
+w
+wq!
+wq
+wqa
+
